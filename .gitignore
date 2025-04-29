@@ -1,33 +1,47 @@
-HELP.md
-#target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Compilados de Java
+*.class
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Archivos de log
+*.log
 
-### IntelliJ IDEA ###
-.idea
-*.iws
+# Directorio de salida de Maven
+/target/
+
+# Archivos temporales del sistema
+*.swp
+*.swo
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Configuración de IDEs
+# IntelliJ
+.idea/
 *.iml
-*.ipr
+*.iws
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Eclipse
+.classpath
+.project
+.settings/
 
-### VS Code ###
+# VS Code
 .vscode/
+
+# Archivos de entorno
+.env
+*.local
+
+# Build JAR
+*.jar
+
+# Backup
+*.orig
+
+# Git merge conflict markers
+*.rej
+*.conflict
+
+# Ignorar test coverage si usas herramientas como Jacoco
+/coverage/
