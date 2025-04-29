@@ -1,5 +1,8 @@
 FROM amazoncorretto:17-alpine-jdk
 
-COPY target/BrotessApp-0.0.1-SNAPSHOT.jar /api-v1.ja
+WORKDIR /app
 
-ENTRYPOINT ["java","-jar","/api-v1.jar"]
+COPY target/BrotessApp-0.0.1-SNAPSHOT.jar app.jar
+COPY src/main/resources/application.properties ./src/main/resources/application.properties
+
+ENTRYPOINT ["java", "-jar", "app.jar"]
